@@ -1,0 +1,84 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+
+\begin{document}
+
+\title{The Mathopedia}
+\author{}
+\date{November 2018}
+\maketitle
+\begin{enumerate}
+    \item  Solve for $\theta\in\mathbb{R}$: $\cos(4\theta)=\cos(3\theta)$\\
+    Solution:\\
+    We have, $\cos(4 \theta)=\cos(2n \pi \pm 3 \theta)$
+    $$ \implies 4 \theta = 2n \pi \pm 3 \theta $$
+    $$\implies \theta= 2n \pi, \theta = \frac{2n \pi }{7}  $$
+    And, we are done.
+    \item (b) $\cos\left(\frac{2\pi}{7}\right)$, $\cos\left(\frac{4\pi}{7}\right)$ and $\cos\left(\frac{6\pi}{7}\right)$ are the roots of an equation of the form $ax^3+bx^2+cx+d = 0$ where $a, b, c, d$ are integers. Determine $a, b, c$ and $d$. \\
+    Solution:\\
+    We have, $\text{Sum of the roots}= \frac{-b}{a}=\cos\left(\frac{4\pi}{7}\right)+ \cos\left(\frac{6\pi}{7}\right)+ \cos\left(\frac{2\pi}{7}\right)= \frac{-1}{2} \implies a=2b$
+    Similarly, 
+    $$\text{Product of the roots}= \frac{d}{a}=\cos\left(\frac{4\pi}{7}\right) \cdot \cos\left(\frac{6\pi}{7}\right) \cdot \cos\left(\frac{2\pi}{7}\right)=\frac{1}{8}=S_1 \implies a=8d $$
+    We have,
+    $$\cos^2 (4\pi/7) + \cos^2 (2\pi/7) + \cos^2 (6\pi /7) = \frac{5}{4} = S_2$$
+    $$\cos^3 (4\pi/7) + \cos^3 (2\pi/7) + \cos^3 (6\pi /7)=\frac{-1}{2}= S_3$$
+    By Newton's Sum of roots,we get,
+    $$ a+2c=0 , \frac{-a}{2}+\frac{5b}{4}-\frac{c}{2}+3d=0$$
+    \item Prove that $2005$ can be written in at least $2$ ways as the sum of 2 perfect (non-zero) squares.\\
+    Solution:\\
+    We have the identities:
+    $$(a^2+b^2)(c^2+d^2) = (ac + bd)^2 + (ad-bc)^2 = (ac - bd)^2 + (ad+bc)^2$$
+    Similarly, we know that prime factorization of $2005= 5*401$, since both primes are in the form of $4k+1$, they can be written as the sum of two squares.
+    Then, $$(2^2+1^2)(20^2+1^2) =41^2 + 18^2 = 39^2 + 22^2  $$
+    \item Determine all functions $f: \mathbb{R}\to \mathbb{R}$ so that $\forall x: x\cdot f(\frac x 2) - f(\frac 2 x) = 1$.\\
+    Solution:\\
+    Let, $P(x)$, be assertion to the function such that:
+    $$f(\frac{x}{2})-f(\frac{2}{x})=1$$
+    For $P(2x)$, $f(x)- f(\frac{1}{x})=1$\\
+    For $P(\frac{2}{x})$, $f(\frac{1}{x})-f(x)=1$
+    $$\implies f(x)= \frac{1}{x}$$
+    However, this implies that $1=0$, which is absurd. So, there is no function with that property.
+    \item Playing soccer with 3 goes as follows: 2 field players try to make a goal past the goalkeeper, the one who makes the goal stands goalkeeper for next game, etc.
+    Arne, Bart and Cauchy played this game. Later, they tell their math teacher that A stood 12 times on the field, B 21 times on the field, C 8 times in the goal. Their teacher knows who made the 6th goal.
+    \item If $f,g: \mathbb{R} \to \mathbb{R}$ are functions that satisfy $f(x+g(y)) = 2x+y \forall x,y \in \mathbb{R}$, then determine $g(x+f(y)).$\\
+    Solution:\\
+    Let, $P(x,y)$ be assertion.\\
+    Then, $P(0,0) \implies f(g(o))=0$\\
+    $P(-g(y),y) \implies f(0)=-2g(y)+y$\\
+    $P(-g(0),0) \implies f(0)+2g(0)=0$\\
+    $P(0,y) \implies f(g(y))=y$\\
+    $P(\frac{-f(0)}{2},0) \implies f(0)=-f(0) \implies f(0)=0$\\
+    So, $g(0)=0, g(y)= \frac{y}{2}$\\
+    Similarly, $f(x)=2x$. Hence, $g(x+f(y)) = \frac{x+2y}{2}$. And, we are done.
+    \item For pairwise distinct non-negative reals $a,b,c$, prove that
+    $$\frac{a^2}{(b-c)^2}+\frac{b^2}{(c-a)^2}+\frac{c^2}{(b-a)^2}>2$$
+    Solution:\\
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\end{enumerate}
+
+
+
+
+\end{document}
